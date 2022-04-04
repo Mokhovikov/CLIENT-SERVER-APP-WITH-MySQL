@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="facultyPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lw4.Controller.facultyInfoController">
+   <children>
+      <MenuButton fx:id="menuButton" alignment="CENTER" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Меню" textAlignment="CENTER">
+        <items>
+            <MenuItem fx:id="studentMenu" mnemonicParsing="false" text="Student" />
+            <MenuItem fx:id="resultMenu" mnemonicParsing="false" text="Result" />
+        </items>
+      </MenuButton>
+      <TableView fx:id="facultyTable" editable="true" layoutX="151.0" layoutY="8.0" prefHeight="339.0" prefWidth="434.0">
+        <columns>
+          <TableColumn fx:id="numberColumn" prefWidth="32.800048828125" text="№" />
+          <TableColumn fx:id="specializationColumn" prefWidth="117.5999755859375" text="Specialization" />
+            <TableColumn fx:id="specialityColumn" prefWidth="75.0" text="Speciality" />
+            <TableColumn fx:id="courseColumn" prefWidth="75.0" text="Course" />
+            <TableColumn fx:id="studentColumn" prefWidth="131.99997558593748" text="Student" />
+        </columns>
+      </TableView>
+      <Button fx:id="exitButton" layoutX="465.0" layoutY="359.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Выйти" />
+      <Text layoutX="152.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация факультета" textAlignment="CENTER" wrappingWidth="294.13671875">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="addButton" layoutX="14.0" layoutY="310.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Добавить" />
+   </children>
+</AnchorPane>

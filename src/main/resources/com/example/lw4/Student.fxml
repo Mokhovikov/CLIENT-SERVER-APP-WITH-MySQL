@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lw4.Controller.studentController">
+   <children>
+      <MenuButton fx:id="menuButton" alignment="CENTER" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Меню" textAlignment="CENTER">
+         <items>
+            <MenuItem fx:id="resultMenu" mnemonicParsing="false" text="Result" />
+            <MenuItem fx:id="facultyMenu" mnemonicParsing="false" text="Faculty" />
+         </items>
+      </MenuButton>
+      <TableView fx:id="facultyTable" layoutX="161.0" layoutY="18.0" prefHeight="378.0" prefWidth="434.0" style="-fx-background-color: #FFCEE4;">
+         <columns>
+            <TableColumn fx:id="numberColumn" prefWidth="32.800048828125" text="№" />
+            <TableColumn fx:id="studentColumn" prefWidth="156.0" text="Student" />
+            <TableColumn fx:id="courseColumn" text="Course" />
+            <TableColumn fx:id="AverageMarkColumn" prefWidth="85.60003662109375" text="AverageMark" />
+            <TableColumn fx:id="ageColumn" prefWidth="77.60001220703123" text="Age" />
+         </columns>
+      </TableView>
+      <Button fx:id="exitButton" layoutX="24.0" layoutY="355.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Выйти" />
+      <Text layoutX="8.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о студентах" textAlignment="CENTER" wrappingWidth="152.5367431640625">
+         <font>
+            <Font name="Impact" size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="addButton" layoutX="24.0" layoutY="280.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Добавить" />
+      <Button fx:id="refreshButton" layoutX="24.0" layoutY="318.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="120.0" text="Обновить" />
+   </children>
+</AnchorPane>
